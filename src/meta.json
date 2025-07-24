@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "categories" : [ "TEXT" ],
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 227670094525,
+  "label" : "Advanced Text Pro",
+  "icon" : "https://140615827.fs1.hubspotusercontent-eu1.net/hubfs/140615827/text-field-focus-svgrepo-com.svg",
+  "is_available_for_new_content" : true
+}

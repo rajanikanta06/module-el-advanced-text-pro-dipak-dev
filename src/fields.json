@@ -1,0 +1,290 @@
+[ {
+  "id" : "8f13a7f6-c48e-753b-77dc-ada3a6878cdb",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Animated", "Animated" ], [ "Highlighted", "Highlighted" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Animated"
+}, {
+  "id" : "662eef80-506e-0bc8-bfc8-751b8c6bac75",
+  "name" : "animated",
+  "label" : "Animated",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "style",
+    "controlling_value_regex" : "Animated",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "Typing", "Typing" ], [ "rotate-one", "Rotate 1" ], [ "type", "Type" ], [ "rotate-two", "Rotate 2" ], [ "loading-bar", "Loading bar" ], [ "slide", "Slide" ], [ "clip", "Clip" ], [ "zoom", "Zoom" ], [ "rotate-three", "Rotate 3" ], [ "letters-scale", "Letters scale" ], [ "push", "Push" ], [ "fade", "Fade" ], [ "rotate", "Rotate" ], [ "scale", "Scale" ], [ "color", "Color" ], [ "bounce", "Bounce" ], [ "wave", "Wave" ], [ "flip", "Flip" ], [ "glitch", "Glitch" ], [ "blink", "Blink" ], [ "blur", "Blur" ], [ "skew", "Skew" ], [ "zoomIn2", "Zoom In 2" ], [ "slideUp", "Slide Up" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Typing"
+}, {
+  "id" : "e7ab1014-999f-78a9-01b9-a4f587b26673",
+  "name" : "shape",
+  "label" : "Shape",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "style",
+    "controlling_value_regex" : "Highlighted",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "Circle", "Circle" ], [ "Wavy-Zigzag", "Wavy Zigzag" ], [ "Underline", "Underline" ], [ "Cross-X", "Cross X" ], [ "Double-Underline", "Double Underline" ], [ "Strikethrough", "Strikethrough" ], [ "Underline-Zigzag", "Underline Zigzag" ], [ "Wave", "Wave" ], [ "Wave-Line", "Wave Line" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "Circle"
+}, {
+  "id" : "65ab6e6d-041a-228b-10c0-25b848b47dce",
+  "name" : "prefix_text",
+  "label" : "Prefix Text",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "My favourite food is"
+}, {
+  "id" : "f016c016-8a7c-7422-e0e0-00de688ca38e",
+  "name" : "highlight_text",
+  "label" : "Highlight Text",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "style",
+    "controlling_value_regex" : "Highlighted",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Shape Effects"
+}, {
+  "id" : "c92a5c0d-e77c-54ab-bd64-dd3d6c3212c8",
+  "name" : "animated_text_group",
+  "label" : "Animated Text Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 2
+  },
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "style",
+    "controlling_value_regex" : "Animated",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "f1f8b69c-6217-0df7-7465-9d046f5ded5c",
+    "name" : "animated_text",
+    "label" : "Animated Text",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "pizza"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "animated_text" : "pizza"
+  }, {
+    "animated_text" : "pizza"
+  } ]
+}, {
+  "id" : "0993122b-84e6-7fdd-9e8f-7090c547d874",
+  "name" : "style_1",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "372907ab-f440-0537-3da2-dc5229a19473",
+    "name" : "textalignment_field",
+    "label" : "Text Alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "display_width" : null,
+    "default" : {
+      "text_align" : "CENTER"
+    }
+  }, {
+    "id" : "033ed704-a4e6-827d-c0b5-915f43c21796",
+    "name" : "prefix_suffix_font",
+    "label" : "Prefix/Suffix Font",
+    "required" : false,
+    "locked" : false,
+    "inherited_value" : {
+      "default_value_path" : "theme.secondary_color",
+      "property_value_paths" : {
+        "color" : "theme.secondary_color.color",
+        "opacity" : "theme.secondary_color.opacity"
+      }
+    },
+    "load_external_fonts" : true,
+    "type" : "font",
+    "display_width" : null,
+    "default" : {
+      "size" : 28,
+      "size_unit" : "px",
+      "color" : "#2198ae",
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Open Sans",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  }, {
+    "id" : "4b91affb-f537-3dda-9f51-4d375ae14c66",
+    "name" : "advanced_text",
+    "label" : "Advanced Text",
+    "required" : false,
+    "locked" : false,
+    "inherited_value" : {
+      "property_value_paths" : {
+        "font" : "theme.body_font.font"
+      }
+    },
+    "load_external_fonts" : true,
+    "type" : "font",
+    "display_width" : null,
+    "default" : {
+      "size" : 28,
+      "size_unit" : "px",
+      "color" : "#FF5C35",
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Open Sans",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "textalignment_field" : {
+      "text_align" : "CENTER"
+    },
+    "prefix_suffix_font" : {
+      "size" : 28,
+      "size_unit" : "px",
+      "color" : "#2198ae",
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Open Sans",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    },
+    "advanced_text" : {
+      "size" : 28,
+      "size_unit" : "px",
+      "color" : "#FF5C35",
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Open Sans",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE"
+    }
+  }
+}, {
+  "id" : "aaa30d6f-4ad1-69f0-4839-814529a85d37",
+  "name" : "suffix_text",
+  "label" : "Suffix Text",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "animated",
+    "controlling_value_regex" : "mix",
+    "property" : null,
+    "operator" : "NOT_EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Amazing Module"
+}, {
+  "id" : "668c5d30-39ef-c0d1-a233-bafe9fafa2eb",
+  "name" : "add_link",
+  "label" : "Add Link",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "d475173c-57f8-5a1f-6c19-864cd3169099",
+  "name" : "url_field",
+  "label" : "URL",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "add_link",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "supported_types" : [ "EXTERNAL", "CONTENT" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "content_id" : null,
+    "href" : "https://www.google.co.in/",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "92eb0598-dd35-fbcd-a056-ce6272c11012",
+  "name" : "text_html_tag",
+  "label" : "Text HTML tag",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "h1", "H1" ], [ "h2", "H2" ], [ "h3", "H3" ], [ "h4", "H4" ], [ "h5", "H5" ], [ "h6", "H6" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "display_width" : null,
+  "default" : "h3"
+} ]

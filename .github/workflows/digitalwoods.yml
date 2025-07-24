@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.3
+      - name: HubSpot Deploy To Template Marketplace
+        uses: HubSpot/hubspot-cms-deploy-action@v1.7
+        with:
+          src_dir: ./src
+          dest_dir: "modules/Advanced-text-pro.module"
+          portal_id: ${{ secrets.DIGITALWOODS_HS_AC_ID }}
+          personal_access_key: ${{ secrets.DIGITALWOODS_HS_PA_TOKEN }}
